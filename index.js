@@ -99,7 +99,9 @@ reviews.push({name: "harry",
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place
  * is chill with really cool people, great for getting work done on
- * weekdays"
+ * weekdays" */
+
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 
 /* Task 7: Write a function to return a review based on the index of
    the review in the array.
