@@ -119,8 +119,10 @@ reviews[7].feedback = "this place is chill with really cool people, great for ge
    * review and their feedback was: Beautiful atmosphere and wonderful
    * vegan options!`
    */
+
 function getReviewByIndex(reviews, index) {
-    /* code here */
+    const review = reviews[index];
+    return `${review.name} gave the restaurant a ${review.rating} star review and their feedback was: ${review.feedback}`;
 }
 
 
