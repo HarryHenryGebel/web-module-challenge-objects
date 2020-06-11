@@ -93,7 +93,7 @@ console.log(reviews[5].feedback);
 /* Task 5: Add a new rating with your (fictitious) opinions of the
  * restaurant in the same format as the reviews above. */
 
-reviews.push({name: "harry",
+reviews.push({name: "Harry",
               rating: 4.9,
               feedback: "Great place, but needs more scrapple"});
 
