@@ -43,7 +43,20 @@ const notMuchScrapple = createMenuItem("Eggs, Bacon, Scrapple, and Sausage",
    For example, burger.discount("teacher") would return 13.5 and
    burger.discount("public") would return 16.2*/
 
+burger.discount = function(customerType) {
+    let discount = undefined;
+    if (customerType === "teacher" || customerType === "student") {
+        discount = .75;
+    } else if (customerType === "public") {
+        discount = .9;
+    }
+    else {
+        console.log(`Error: there's no such thing as a ${customerType}.`);
+        return undefined;
+    }
 
+    return this.price * discount;
+};
 
 ///////////////Reviews (MVP)///////////////////
 
