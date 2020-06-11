@@ -10,13 +10,24 @@ const breakfastBurrito = {name: "Breakfast Burrito",
  * format as the items above. */
 
 function createMenuItem(name, cost, category){
-    /* Code here */
+    return {name: name,
+            price: cost,
+            category: category};
 }
 
 /* Task 1b: use your function to create 3 more menu items. You may add
  * any items to the menu that you'd like */
 
-
+const mediumScrapple = createMenuItem("Scrapple, Bacon, Sausage, and Scrapple",
+                                5.00,
+                                "Medium amounts of scrapple");
+const largeScrapple = createMenuItem(
+    "Scrapple, Eggs, Scrapple, Scrapple, Bacon, Scrapple",
+    6.00,
+    "Large amounts of scrapple");
+const notMuchScrapple = createMenuItem("Eggs, Bacon, Scrapple, and Sausage",
+                                       7.00,
+                                       "Hasn't got much scrapple in it");
 
 /* Task 2: You're having a lunch special! 25% off for teachers and
  * students, 10% off for everyone else. Add a method to your burger
