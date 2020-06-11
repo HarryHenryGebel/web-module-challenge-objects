@@ -140,8 +140,8 @@ function getReviewByIndex(reviews, index) {
    their feedback was: "this place is chill with really cool people,
    great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-    /* code here */
+function getLastReview(reviews) {
+    return getReviewByIndex(reviews, reviews.length - 1);
 }
 
 
