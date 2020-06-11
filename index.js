@@ -60,7 +60,7 @@ const reviews = [{name: "Daniela",
                  {name:"Reyna",
                   rating: 3.5,
                   feedback: ""},
-                ]
+                ];
 
 /* Task 4: Console.log just Julius' feedback */
 
