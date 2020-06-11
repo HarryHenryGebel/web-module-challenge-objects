@@ -165,8 +165,15 @@ function getLastReview(reviews) {
     okay."}]
 */
 
-function getReviewByRating(/* code here */) {
-    /* code here */
+function getReviewByRating(reviews, rating) {
+    // can we use Array.filter() yet?
+    const filteredReviews = [];
+
+    for (review of reviews)
+        if (Math.floor(review.rating) === Math.floor(rating))
+            filteredReviews.push(review);
+
+    return filteredReviews;
 }
 
 
